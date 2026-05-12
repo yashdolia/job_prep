@@ -4,6 +4,15 @@ Custom scripts built on top of `notebooklm-py` to automate study workflows for t
 
 > The other files in this folder (`check_rpc_health.py`, `diagnose_get_notebook.py`) belong to the upstream `notebooklm-py` project and are unrelated to these scripts.
 
+## Setup
+
+```powershell
+# from repo root, with the venv already activated
+pip install -e ".[browser]"           # the parent package
+pip install -r scripts/requirements.txt   # extras for the helper scripts (pyyaml, requests)
+notebooklm login                      # one-time auth (opens Chromium)
+```
+
 ## Target notebooks
 
 | Notebook | Topic |

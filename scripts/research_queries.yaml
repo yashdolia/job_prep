@@ -1,0 +1,13 @@
+# Queries that research_import.py will run as deep web research.
+# Each query is sent to NotebookLM's deep-research backend; resulting sources
+# are imported into the target notebook (default: "06 - Interview Bank").
+
+target_notebook: "06 - Interview Bank"
+
+queries:
+  - Delta Lake performance tuning, Z-ordering, OPTIMIZE and VACUUM best practices for production Databricks workloads
+  - Slowly Changing Dimension Type 2 implementation patterns in Azure Synapse and Databricks
+  - Azure Data Factory mapping data flow vs Databricks notebook activity tradeoffs for medium-scale ETL
+  - Synapse dedicated SQL pool distribution strategies (hash, round-robin, replicated) for fact and dimension tables
+  - Event Hubs vs IoT Hub vs Service Bus — when to use each in Azure data engineering pipelines
+  - Unity Catalog vs Hive Metastore migration patterns and gotchas for existing Databricks workspaces

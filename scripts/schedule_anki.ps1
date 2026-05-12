@@ -1,27 +1,31 @@
 <#
 .SYNOPSIS
-    Register a Windows Scheduled Task to run daily_brief.py every morning at 7:00 AM.
+    Register a Windows Scheduled Task to run quiz_to_anki.py every Sunday at 8:00 AM.
 
 .DESCRIPTION
-    The task runs under the current user with logon type S4U, meaning it fires
-    whether or not the user is interactively logged in (no stored password).
-    Re-running this script overwrites any existing task of the same name.
+    Generates a HARD DP-203 quiz from NotebookLM, converts it to an Anki-importable
+    CSV, and saves it under downloads/anki-decks/. Re-running this script overwrites
+    any existing task of the same name.
+
+    Logon type S4U — runs whether or not the user is interactively logged in, no
+    stored password. -WakeToRun is set so the system wakes from sleep at 8 AM.
 
 .NOTES
-    - NotebookLM auth cookies live under the current user's profile
-      (~/.notebooklm/profiles/default/), so the task MUST run as the same user
-      that ran `notebooklm login`. S4U preserves user identity.
-    - If S4U fails on your machine (rare; some corporate AD policies block it),
-      change LogonType to Password — that will prompt for your password on
-      registration and store it in the credential vault.
-    - View / edit / delete in Task Scheduler under Task Scheduler Library →
-      "NotebookLM Daily Brief".
+    Must be run from an elevated (administrator) PowerShell window because S4U +
+    WakeToRun require it.
+
+    To make WakeToRun actually wake the laptop, also enable wake timers in the
+    active power plan:
+        powercfg /SETACVALUEINDEX SCHEME_CURRENT SUB_SLEEP RTCWAKE 1
+        powercfg /SETDCVALUEINDEX SCHEME_CURRENT SUB_SLEEP RTCWAKE 1
+        powercfg /SETACTIVE SCHEME_CURRENT
 #>
 
 [CmdletBinding()]
 param(
-    [string] $TaskName  = "NotebookLM Daily Brief",
-    [string] $TaskTime  = "07:00",
+    [string] $TaskName  = "NotebookLM Weekly Anki Deck",
+    [string] $TaskTime  = "08:00",
+    [string] $DayOfWeek = "Sunday",
     [string] $RepoRoot
 )
 
@@ -35,7 +39,7 @@ if (-not $RepoRoot) {
 }
 
 $python = Join-Path $RepoRoot ".venv\Scripts\python.exe"
-$script = Join-Path $RepoRoot "scripts\daily_brief.py"
+$script = Join-Path $RepoRoot "scripts\quiz_to_anki.py"
 
 if (-not (Test-Path $python)) { throw "Python interpreter not found: $python" }
 if (-not (Test-Path $script)) { throw "Script not found: $script" }
@@ -43,18 +47,16 @@ if (-not (Test-Path $script)) { throw "Script not found: $script" }
 Write-Host "Registering scheduled task '$TaskName'"
 Write-Host "  Python : $python"
 Write-Host "  Script : $script"
-Write-Host "  Trigger: every day at $TaskTime"
+Write-Host "  Trigger: every $DayOfWeek at $TaskTime"
 Write-Host "  WorkDir: $RepoRoot"
 
-# Build task components.
 $action = New-ScheduledTaskAction `
     -Execute $python `
     -Argument "`"$script`"" `
     -WorkingDirectory $RepoRoot
 
-$trigger = New-ScheduledTaskTrigger -Daily -At $TaskTime
+$trigger = New-ScheduledTaskTrigger -Weekly -DaysOfWeek $DayOfWeek -At $TaskTime
 
-# S4U = "Run whether user is logged on or not" without storing a password.
 $principal = New-ScheduledTaskPrincipal `
     -UserId $env:USERNAME `
     -LogonType S4U `
@@ -68,7 +70,6 @@ $settings = New-ScheduledTaskSettingsSet `
     -ExecutionTimeLimit (New-TimeSpan -Hours 1) `
     -MultipleInstances IgnoreNew
 
-# Idempotent: replace any existing task with the same name.
 if (Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue) {
     Write-Host "Removing existing task '$TaskName'..."
     Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false
@@ -80,7 +81,7 @@ Register-ScheduledTask `
     -Trigger $trigger `
     -Principal $principal `
     -Settings $settings `
-    -Description "Generate today's Azure DE audio brief from NotebookLM and download it." | Out-Null
+    -Description "Generate a weekly DP-203 quiz from NotebookLM and convert it to an Anki CSV deck." | Out-Null
 
 Write-Host ""
 Write-Host "Registered. Next run:" -ForegroundColor Green
