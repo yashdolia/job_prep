@@ -1,0 +1,61 @@
+# Notebook name → list of URLs to bulk-add.
+# Notebook is matched by exact title (case-insensitive). Missing notebooks are created.
+
+"01 - Foundations (SQL + Python + DW)":
+  - https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-core-data-concepts/
+  - https://en.wikipedia.org/wiki/Data_warehouse
+  # SQL article tutorials (text content NotebookLM can index)
+  - https://mode.com/sql-tutorial/
+  - https://www.geeksforgeeks.org/sql-tutorial/
+  # Data modeling articles
+  - https://www.holistics.io/books/setup-analytics/kimball-s-dimensional-data-modeling/
+  # YouTube playlists
+  - https://www.youtube.com/playlist?list=PLtgiThe4j67osrX6iUEpo7J4Gkh_G25Y_
+  - https://www.youtube.com/playlist?list=PLeo1K3hjS3uuASpe-1LjfG5f14Bnozjwy
+  - https://www.youtube.com/playlist?list=PLUcmakntVocWGSKXIsUn1J7Wm9ekpZ87G
+  - https://www.youtube.com/playlist?list=PLeo1K3hjS3uu4Lr8_kro2AqaO6CFYgKOl
+  - https://www.youtube.com/playlist?list=PLTsNSGeIpGnEpkKQfQuOWmT85Pvsx1BWY
+  - https://www.youtube.com/watch?v=UiTvqSd52ak&list=PLTsNSGeIpGnGP8A74Ie1PgqHhewsqD3fv
+  - https://www.youtube.com/watch?v=w1apcBWgJ0w
+  # Interactive practice platforms are NOT listed here — see scripts/practice_platforms.md
+
+"02 - Azure Data Factory":
+  - https://learn.microsoft.com/en-us/azure/data-factory/introduction
+  - https://learn.microsoft.com/en-us/azure/data-factory/concepts-pipelines-activities
+
+"03 - Azure Databricks + PySpark":
+  - https://www.youtube.com/playlist?list=PLxy0DxWEupiODTF_xM5Lw1ghc0XtLCUhC
+  - https://learn.microsoft.com/en-us/azure/databricks/introduction/
+  - https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/
+  - https://learn.microsoft.com/en-us/azure/databricks/dlt/
+  - https://learn.microsoft.com/en-us/azure/databricks/jobs/
+  - https://learn.microsoft.com/en-us/azure/databricks/compute/
+
+"04 - Synapse + ADLS + Storage":
+  - https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is
+  - https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction
+  - https://www.youtube.com/playlist?list=PLMWaZteqtEaIZxPCw_0AO1GsqESq3hZc6
+  - https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is
+  - https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/on-demand-workspace-overview
+  - https://learn.microsoft.com/en-us/azure/synapse-analytics/cicd/source-control
+
+"05 - DP-203 + Architecture + Streaming":
+  - https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-203/
+  - https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-introduction
+  - https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about
+  - https://learn.microsoft.com/en-us/azure/cosmos-db/introduction
+  - https://www.youtube.com/playlist?list=PLUYdS0azaz13w0o-_DsSL2qxRWuOfQVWh
+  - https://www.youtube.com/playlist?list=PLMWaZteqtEaLRsSynAsaS_aLzDPBUU4CV
+
+"06 - Interview Bank":
+  - https://learn.microsoft.com/en-us/azure/architecture/data-guide/
+
+"07 - Git + CI-CD for DE":
+  - https://www.youtube.com/watch?v=Ez8F0nW6S-w
+  - https://www.youtube.com/watch?v=qP8kir2GUgo
+  - https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery
+  - https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-improvements
+  - https://learn.microsoft.com/en-us/azure/databricks/dev-tools/ci-cd/
+  - https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/
+  - https://learn.microsoft.com/en-us/azure/synapse-analytics/cicd/continuous-integration-delivery
+  - https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines

@@ -1,0 +1,572 @@
+[
+  {
+    "id": "9f7c232c-8429-4b84-96ce-92c7ed78b8c4",
+    "title": "01 - Foundations (SQL + Python + DW)",
+    "created_at": "2026-05-12T01:58:35",
+    "is_owner": true,
+    "sources": [
+      {
+        "type": "pdf",
+        "title": "1.264J Lecture 10 Notes: Database: Data normalization - MIT OpenCourseWare",
+        "url": "https://ocw.mit.edu/courses/1-264j-database-internet-and-systems-integration-technologies-fall-2013/8230628ff6c6aeff33f1c096a78f2bd8_MIT1_264JF13_lect_10.pdf"
+      },
+      {
+        "type": "web_page",
+        "title": "A practical guide to creating Slowly Changing Dimensions Type 2 in dbt | Part 1 - Xebia",
+        "url": "https://xebia.com/blog/a-practical-guide-to-creating-slowly-changing-dimensions-type-2-in-dbt-part-1/"
+      },
+      {
+        "type": "pdf",
+        "title": "ASlMPLE GUIDE TO FIVE NORMAL FORMS IN RELATIONAL DATABASE THEORY - INFN Roma",
+        "url": "https://www.roma1.infn.it/people/barone/metinf/database-normalization.pdf"
+      },
+      {
+        "type": "web_page",
+        "title": "Ace The Data Engineering Interview Questions And Answers For Python SQL Data Modeling And More - 1st Edition PDF | Solutioninn.com",
+        "url": "https://www.solutioninn.com/textbooks/ace-the-data-engineering-interview-questions-and-answers-for-python-sql-data-modeling-and-more-1st-edition-979-8864900970-163800"
+      },
+      {
+        "type": "web_page",
+        "title": "Ace the Data Engineering Interview (New) | Sean Coyne | 9798313235165 | Awesome Books",
+        "url": "https://www.awesomebooks.com/book/9798313235165/ace-the-data-engineering-interview?gc=PT"
+      },
+      {
+        "type": "web_page",
+        "title": "Advanced SQL - YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLtgiThe4j67osrX6iUEpo7J4Gkh_G25Y_"
+      },
+      {
+        "type": "pdf",
+        "title": "Azure Data Engineer roadmap.pdf",
+        "url": null
+      },
+      {
+        "type": "web_page",
+        "title": "B+ Tree vs Hash Index (and when to use them) - SQLpipe",
+        "url": "https://www.sqlpipe.com/blog/b-tree-vs-hash-index-and-when-to-use-them"
+      },
+      {
+        "type": "web_page",
+        "title": "Block Range Index - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Block_Range_Index"
+      },
+      {
+        "type": "web_page",
+        "title": "Codebasics - numpy - YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLUcmakntVocWGSKXIsUn1J7Wm9ekpZ87G"
+      },
+      {
+        "type": "web_page",
+        "title": "Common Data Modeling Interview Questions for Data Engineers",
+        "url": "https://dataengineeracademy.com/blog/common-data-modeling-interview-questions-for-data-engineers/"
+      },
+      {
+        "type": "web_page",
+        "title": "Cracking the Data Modeling Interview : r/dataengineering - Reddit",
+        "url": "https://www.reddit.com/r/dataengineering/comments/17jh22q/cracking_the_data_modeling_interview/"
+      },
+      {
+        "type": "web_page",
+        "title": "Data Modeling Interview Guide — Fundamentals, Questions & Practice (2026)",
+        "url": "https://interviewforgeai.com/guides/data-engineering/data-modeling"
+      },
+      {
+        "type": "web_page",
+        "title": "Data Modeling Interview Guide: Beyond the Basics — Key Areas for Deeper Discussion",
+        "url": "https://blog.dataengineerthings.org/data-modeling-interview-guide-beyond-the-basics-key-areas-for-deeper-discussion-89639758cd42"
+      },
+      {
+        "type": "web_page",
+        "title": "Data Modeling for System Design Interviews | Hello Interview System Design in a Hurry",
+        "url": "https://www.hellointerview.com/learn/system-design/core-concepts/data-modeling"
+      },
+      {
+        "type": "web_page",
+        "title": "Data warehouse - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Data_warehouse"
+      },
+      {
+        "type": "web_page",
+        "title": "Database Indexing for System Design Interviews | Hello Interview System Design in a Hurry",
+        "url": "https://www.hellointerview.com/learn/system-design/core-concepts/db-indexing"
+      },
+      {
+        "type": "web_page",
+        "title": "Database Partitioning: Horizontal vs Vertical — Interview Guide - bugfree.ai",
+        "url": "https://blog.bugfree.ai/database-partitioning-horizontal-vs-vertical-interview-guide"
+      },
+      {
+        "type": "web_page",
+        "title": "Design a Data Warehouse Schema for a Ride-Sharing Service - Exponent",
+        "url": "https://www.tryexponent.com/courses/data-modeling-interviews/ride-sharing-data-model"
+      },
+      {
+        "type": "web_page",
+        "title": "Dimensional Modeling: Tracking History with (scd) Hybrid Type 6 - Iteration Insights",
+        "url": "https://iterationinsights.com/article/dimensional-modeling-tracking-history-with-scd-hybrid-type-6/"
+      },
+      {
+        "type": "youtube",
+        "title": "How I Mastered Data Modeling Interviews",
+        "url": "https://www.youtube.com/watch?v=IUK0PmQDrqM"
+      },
+      {
+        "type": "web_page",
+        "title": "Introduction to Microsoft Azure Data core data concepts - Training | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-core-data-concepts/"
+      },
+      {
+        "type": "web_page",
+        "title": "Inverted index - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Inverted_index"
+      },
+      {
+        "type": "web_page",
+        "title": "Kimball's Dimensional Data Modeling | The Analytics Setup Guidebook",
+        "url": "https://www.holistics.io/books/setup-analytics/kimball-s-dimensional-data-modeling/"
+      },
+      {
+        "type": "web_page",
+        "title": "Lecture 11 Data warehouse Schema - Gyan Sanchay",
+        "url": "https://gyansanchay.csjmu.ac.in/wp-content/uploads/2021/11/Lecture-11data-warehouse-scema.pdf"
+      },
+      {
+        "type": "web_page",
+        "title": "LinkedIn",
+        "url": "https://lnkd.in/dWCVfXsA"
+      },
+      {
+        "type": "web_page",
+        "title": "LinkedIn",
+        "url": "https://lnkd.in/dt_-2-Uj"
+      },
+      {
+        "type": "web_page",
+        "title": "LinkedIn",
+        "url": "https://lnkd.in/dPPpttHg"
+      },
+      {
+        "type": "pdf",
+        "title": "MODELING, ANALYSIS AND SIMULATION OF NEAR REAL-TIME E-T-L PROCESSES OF BIG DATA IN CLOUD Neepa Biswas",
+        "url": "http://20.198.91.3:8080/jspui/bitstream/123456789/5366/2/PhD%20Thesis%28Information%20Technology%29Neepa%20Biswas.pdf"
+      },
+      {
+        "type": "youtube",
+        "title": "Master All Linux Commands for Big Data Engineering in One Video 🔥🔥",
+        "url": "https://www.youtube.com/watch?v=w1apcBWgJ0w"
+      },
+      {
+        "type": "web_page",
+        "title": "Matplotlib tutorial - YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLeo1K3hjS3uu4Lr8_kro2AqaO6CFYgKOl"
+      },
+      {
+        "type": "web_page",
+        "title": "Normalization Practice case study.pptx - Slideshare",
+        "url": "https://www.slideshare.net/slideshow/normalization-practice-case-studypptx/254906590"
+      },
+      {
+        "type": "web_page",
+        "title": "Normalization vs Denormalization - by Saurabh Dashora - System Design Codex",
+        "url": "https://newsletter.systemdesigncodex.com/p/normalization-vs-denormalization"
+      },
+      {
+        "type": "web_page",
+        "title": "Pandas Tutorial (Data Analysis In Python) - YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLeo1K3hjS3uuASpe-1LjfG5f14Bnozjwy"
+      },
+      {
+        "type": "youtube",
+        "title": "Power BI Interview Question: What is Slowly Changing Dimensions (SCD) in Data Warehousing?",
+        "url": "https://www.youtube.com/watch?v=MnAjugKga-8"
+      },
+      {
+        "type": "web_page",
+        "title": "Python Fundmental - YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLTsNSGeIpGnEpkKQfQuOWmT85Pvsx1BWY"
+      },
+      {
+        "type": "pdf",
+        "title": "Relational Database Design: A Review - International Journal of Computer Applications",
+        "url": "https://www.ijcaonline.org/archives/volume176/number6/kumar-2017-ijca-915626.pdf"
+      },
+      {
+        "type": "web_page",
+        "title": "Relational and Dimensional Data Models - GoodData",
+        "url": "https://www.gooddata.com/blog/relational-dimensional-data-models/"
+      },
+      {
+        "type": "web_page",
+        "title": "Retailer Data Warehouse - Data Modeling Problem - Interview Query",
+        "url": "https://www.interviewquery.com/questions/retailer-data-warehouse"
+      },
+      {
+        "type": "web_page",
+        "title": "SQL tutorial for everyone by Sumit Sir - Trendytech - YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLtgiThe4j67rAoPmnCQmcgLS4iIc5ungg"
+      },
+      {
+        "type": "pdf",
+        "title": "SYSTEM AND METHOD FOR ACHIEVING DETERMINISTIC RECOVERY AND RECONCILIATION IN DISTRIBUTED TRANSACTIONAL DATA PIPELINES - Technical Disclosure Commons",
+        "url": "https://www.tdcommons.org/cgi/viewcontent.cgi?article=10835&context=dpubs_series"
+      },
+      {
+        "type": "web_page",
+        "title": "Sharding vs Partitioning - Macrometa",
+        "url": "https://www.macrometa.com/distributed-data/sharding-vs-partitioning"
+      },
+      {
+        "type": "youtube",
+        "title": "Slowly Changing Dimensions (SCD) Explained: Type 1, 2, & 3",
+        "url": "https://www.youtube.com/watch?v=sZFCYpojP4I"
+      },
+      {
+        "type": "pdf",
+        "title": "The Data Lakehouse: Data Warehousing and More - arXiv",
+        "url": "https://arxiv.org/pdf/2310.08697"
+      },
+      {
+        "type": "pdf",
+        "title": "The Data Warehouse Toolkit",
+        "url": "http://www.r-5.org/files/books/computers/databases/warehouses/Ralph_Kimball_Margy_Ross-The_Data_Warehouse_Toolkit-EN.pdf"
+      },
+      {
+        "type": "web_page",
+        "title": "The Top 5 NoSQL Database Interview Questions and Their Answers - NamasteDev Blogs",
+        "url": "https://namastedev.com/blog/the-top-5-nosql-database-interview-questions-and-their-answers/"
+      },
+      {
+        "type": "web_page",
+        "title": "ThoughtSpot SQL Tutorial | ThoughtSpot",
+        "url": "https://mode.com/sql-tutorial/"
+      },
+      {
+        "type": "pdf",
+        "title": "Top 20 Data Modeling Interview Questions and Answers for 2026 - Analytics Vidhya",
+        "url": "https://www.analyticsvidhya.com/back-channel/download-pdf.php?pid=110717&next="
+      },
+      {
+        "type": "web_page",
+        "title": "Top 50 Data Modeling Interview Questions and Answers for Data Engineers - Data Vidhya",
+        "url": "https://datavidhya.com/blog/data-modeling-interview-questions/"
+      },
+      {
+        "type": "pdf",
+        "title": "Using BPMN for ETL Conceptual Modelling: A Case Study - Semantic Scholar",
+        "url": "https://pdfs.semanticscholar.org/caf5/ee06b4ec40099ae5ee7f803ef10a59b2fe25.pdf"
+      }
+    ]
+  },
+  {
+    "id": "73962ece-2ae0-4d4b-955e-ff4a6ef58429",
+    "title": "07 - Git + CI-CD for DE",
+    "created_at": "2026-05-12T01:58:37",
+    "is_owner": true,
+    "sources": [
+      {
+        "type": "web_page",
+        "title": "Automated publishing for continuous integration and delivery - Azure Data Factory | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-improvements"
+      },
+      {
+        "type": "web_page",
+        "title": "CI/CD on Azure Databricks - Azure Databricks | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/ci-cd/"
+      },
+      {
+        "type": "youtube",
+        "title": "Complete Git and GitHub Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=Ez8F0nW6S-w"
+      },
+      {
+        "type": "web_page",
+        "title": "Continuous integration & delivery in Azure Synapse Analytics - Azure Synapse Analytics | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/cicd/continuous-integration-delivery"
+      },
+      {
+        "type": "web_page",
+        "title": "Continuous integration and delivery - Azure Data Factory | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery"
+      },
+      {
+        "type": "youtube",
+        "title": "GitLab CI CD Tutorial for Beginners [Crash Course]",
+        "url": "https://www.youtube.com/watch?v=qP8kir2GUgo"
+      },
+      {
+        "type": "web_page",
+        "title": "What are Declarative Automation Bundles? - Azure Databricks | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/"
+      },
+      {
+        "type": "web_page",
+        "title": "What is Azure Pipelines? - Azure Pipelines | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+      }
+    ]
+  },
+  {
+    "id": "a7b183cf-cf06-4b73-8140-159bf315276c",
+    "title": "06 - Interview Bank",
+    "created_at": "2026-05-12T01:58:39",
+    "is_owner": true,
+    "sources": [
+      {
+        "type": "web_page",
+        "title": "Get Started with Database Architecture Design - Azure Architecture Center | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/"
+      }
+    ]
+  },
+  {
+    "id": "f7e75f7a-56cf-4d89-8c88-6740a1cdbad9",
+    "title": "05 - DP-203 + Architecture + Streaming",
+    "created_at": "2026-05-12T01:58:41",
+    "is_owner": true,
+    "sources": [
+      {
+        "type": "web_page",
+        "title": "Azure Functions - YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLMWaZteqtEaLRsSynAsaS_aLzDPBUU4CV"
+      },
+      {
+        "type": "web_page",
+        "title": "Azure Logic Apps - YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLUYdS0azaz13w0o-_DsSL2qxRWuOfQVWh"
+      },
+      {
+        "type": "web_page",
+        "title": "Introduction to Azure Stream Analytics - Azure Stream Analytics | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-introduction"
+      },
+      {
+        "type": "web_page",
+        "title": "Microsoft Certified: Azure Data Engineer Associate - Certifications | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-203/"
+      },
+      {
+        "type": "web_page",
+        "title": "Unified AI Database - Azure Cosmos DB | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+      },
+      {
+        "type": "web_page",
+        "title": "What is Azure Event Hubs - Real-time data streaming platform - Azure Event Hubs | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about"
+      }
+    ]
+  },
+  {
+    "id": "558b2a69-c325-438f-afb3-50691d75051b",
+    "title": "04 - Synapse + ADLS + Storage",
+    "created_at": "2026-05-12T01:58:44",
+    "is_owner": true,
+    "sources": [
+      {
+        "type": "web_page",
+        "title": "Azure Data Lake Storage Introduction - Azure Storage | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction"
+      },
+      {
+        "type": "web_page",
+        "title": "Azure Synapse Analytics Playlist - YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLMWaZteqtEaIZxPCw_0AO1GsqESq3hZc6"
+      },
+      {
+        "type": "web_page",
+        "title": "Serverless SQL pool - Azure Synapse Analytics | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/on-demand-workspace-overview"
+      },
+      {
+        "type": "web_page",
+        "title": "Source control in Synapse Studio - Azure Synapse Analytics | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/cicd/source-control"
+      },
+      {
+        "type": "web_page",
+        "title": "What is Azure Synapse Analytics? - Azure Synapse Analytics | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"
+      },
+      {
+        "type": "web_page",
+        "title": "What is dedicated SQL pool (formerly SQL DW)? - Azure Synapse Analytics | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is"
+      }
+    ]
+  },
+  {
+    "id": "5b0f4a45-8383-4382-bec8-7bec12991ade",
+    "title": "03 - Azure Databricks + PySpark",
+    "created_at": "2026-05-12T01:58:46",
+    "is_owner": true,
+    "sources": [
+      {
+        "type": "web_page",
+        "title": "Azure DevOps with Databricks DABs: Step-by-Step Integration Guide",
+        "url": "https://community.databricks.com/t5/technical-blog/azure-devops-with-databricks-dabs-step-by-step-integration-guide/ba-p/141451"
+      },
+      {
+        "type": "web_page",
+        "title": "Best practices for data and AI governance - Azure Databricks - Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/data-governance/best-practices"
+      },
+      {
+        "type": "web_page",
+        "title": "Change Data Capture With Delta Live Tables - The Databricks Blog",
+        "url": "https://www.databricks.com/blog/2022/04/25/simplifying-change-data-capture-with-databricks-delta-live-tables.html"
+      },
+      {
+        "type": "web_page",
+        "title": "Compute - Azure Databricks | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/compute/"
+      },
+      {
+        "type": "web_page",
+        "title": "Databricks Delta Live Tables Announces Support for Simplified Change Data Capture",
+        "url": "https://www.databricks.com/blog/2022/02/10/databricks-delta-live-tables-announces-support-for-simplified-change-data-capture.html"
+      },
+      {
+        "type": "web_page",
+        "title": "Databricks Pipeline Showdown: Delta Live Tables vs Jobs & Workflows - Diggibyte",
+        "url": "https://diggibyte.com/databricks-pipeline-showdown/"
+      },
+      {
+        "type": "pdf",
+        "title": "Databricks advanced",
+        "url": "https://cw.fel.cvut.cz/b241/_media/courses/b0m33bdt/b0m33bdt-12p-advanced-databricks_2024_en.pdf"
+      },
+      {
+        "type": "web_page",
+        "title": "Getting Started — PySpark 4.1.1 documentation",
+        "url": "https://spark.apache.org/docs/latest/api/python/getting_started/index.html"
+      },
+      {
+        "type": "web_page",
+        "title": "Lakeflow Jobs - Azure Databricks | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/"
+      },
+      {
+        "type": "web_page",
+        "title": "Lakeflow Spark Declarative Pipelines - Azure Databricks | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/dlt/"
+      },
+      {
+        "type": "web_page",
+        "title": "Phase 8 - Design compute configuration - Azure Databricks",
+        "url": "https://docs.azure.cn/en-us/databricks/lakehouse-architecture/deployment-guide/compute"
+      },
+      {
+        "type": "web_page",
+        "title": "PySpark Interview Series - YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLxy0DxWEupiODTF_xM5Lw1ghc0XtLCUhC"
+      },
+      {
+        "type": "web_page",
+        "title": "Row filters and column masks | Databricks on AWS",
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/filters-and-masks"
+      },
+      {
+        "type": "web_page",
+        "title": "Unity Catalog best practices - Azure Databricks - Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/best-practices"
+      },
+      {
+        "type": "web_page",
+        "title": "What is Azure Databricks? - Azure Databricks | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/introduction/"
+      },
+      {
+        "type": "web_page",
+        "title": "What is Photon? - Azure Databricks | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/compute/photon"
+      },
+      {
+        "type": "web_page",
+        "title": "What is Unity Catalog? - Azure Databricks | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/"
+      }
+    ]
+  },
+  {
+    "id": "beb9db72-f85f-4251-a168-a77e1cd61175",
+    "title": "02 - Azure Data Factory",
+    "created_at": "2026-05-12T01:58:48",
+    "is_owner": true,
+    "sources": [
+      {
+        "type": "web_page",
+        "title": "Azure Data Factory - YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLxy0DxWEupiOnvh9Ujf-yS0IQzpokKjGf"
+      },
+      {
+        "type": "web_page",
+        "title": "Azure Functions - YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLMWaZteqtEaLRsSynAsaS_aLzDPBUU4CV"
+      },
+      {
+        "type": "web_page",
+        "title": "Azure Logic Apps - YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLUYdS0azaz13w0o-_DsSL2qxRWuOfQVWh"
+      },
+      {
+        "type": "web_page",
+        "title": "Azure Synapse Analytics Playlist - YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLMWaZteqtEaIZxPCw_0AO1GsqESq3hZc6"
+      },
+      {
+        "type": "web_page",
+        "title": "Introduction to Azure Data Factory - Azure Data Factory | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/data-factory/introduction"
+      },
+      {
+        "type": "web_page",
+        "title": "Microsoft Fabric Playlist - YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLMWaZteqtEaLm10IKzSzwJ5JyOFPj0ZcU"
+      },
+      {
+        "type": "web_page",
+        "title": "Pipelines and activities - Azure Data Factory & Azure Synapse | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/data-factory/concepts-pipelines-activities"
+      }
+    ]
+  },
+  {
+    "id": "e59da38e-564c-4d36-95c6-faac45559d72",
+    "title": "unit testing automation",
+    "created_at": "2026-05-12T01:58:50",
+    "is_owner": true,
+    "sources": [
+      {
+        "type": "unknown",
+        "title": "unit testing automation",
+        "url": null
+      }
+    ]
+  },
+  {
+    "id": "1d43f603-e5d7-4e68-90fa-cd245a3905c0",
+    "title": "Comprehensive Health Status Report",
+    "created_at": "2026-05-12T01:58:53",
+    "is_owner": true,
+    "sources": [
+      {
+        "type": "pdf",
+        "title": "192168835_SL_2025-03-30T17:10:34.27_report.pdf",
+        "url": null
+      }
+    ]
+  },
+  {
+    "id": "69c142d8-e580-4882-95fb-b9b5983943d1",
+    "title": "Yash Dolia QA Resume",
+    "created_at": "2026-05-12T01:58:55",
+    "is_owner": true,
+    "sources": [
+      {
+        "type": "pdf",
+        "title": "Yash Dolia_Resume_IND1 2.pdf",
+        "url": null
+      }
+    ]
+  }
+]
