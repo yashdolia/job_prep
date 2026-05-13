@@ -38,21 +38,25 @@ if (-not $RepoRoot) {
     $RepoRoot = (Resolve-Path (Join-Path $scriptDir "..")).Path
 }
 
-$python = Join-Path $RepoRoot ".venv\Scripts\python.exe"
-$script = Join-Path $RepoRoot "scripts\quiz_to_anki.py"
+$python  = Join-Path $RepoRoot ".venv\Scripts\python.exe"
+$script  = Join-Path $RepoRoot "scripts\quiz_to_anki.py"
+$wrapper = Join-Path $RepoRoot "scripts\run_with_preflight.ps1"
 
-if (-not (Test-Path $python)) { throw "Python interpreter not found: $python" }
-if (-not (Test-Path $script)) { throw "Script not found: $script" }
+if (-not (Test-Path $python))  { throw "Python interpreter not found: $python" }
+if (-not (Test-Path $script))  { throw "Script not found: $script" }
+if (-not (Test-Path $wrapper)) { throw "Wrapper not found: $wrapper" }
+
+$scriptName = Split-Path $script -Leaf
 
 Write-Host "Registering scheduled task '$TaskName'"
-Write-Host "  Python : $python"
-Write-Host "  Script : $script"
+Write-Host "  Wrapper: $wrapper"
+Write-Host "  Script : $scriptName (gated by preflight auth check)"
 Write-Host "  Trigger: every $DayOfWeek at $TaskTime"
 Write-Host "  WorkDir: $RepoRoot"
 
 $action = New-ScheduledTaskAction `
-    -Execute $python `
-    -Argument "`"$script`"" `
+    -Execute "powershell.exe" `
+    -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$wrapper`" -ScriptName `"$scriptName`"" `
     -WorkingDirectory $RepoRoot
 
 $trigger = New-ScheduledTaskTrigger -Weekly -DaysOfWeek $DayOfWeek -At $TaskTime
