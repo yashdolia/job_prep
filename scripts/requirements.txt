@@ -1,4 +1,4 @@
 # Extra dependencies needed by the helper scripts in this folder
 # (the parent notebooklm-py package already pulls in httpx, click, rich, playwright).
 pyyaml>=6.0       # bulk_load.py, research_import.py
-requests>=2.31    # resolve_links.py
+requests>=2.34.0    # resolve_links.py
